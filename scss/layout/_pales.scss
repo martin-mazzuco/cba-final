@@ -1,0 +1,11 @@
+.grid-cont {
+    main{
+        .main__rock--top{
+            @include flex(center,center,column,0.9375rem);
+            .rock__titulo{
+                color: white;
+                margin: 1.5625rem;
+            }
+        }
+    }
+    }

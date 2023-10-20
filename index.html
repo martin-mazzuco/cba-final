@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Escalada en cordoba, vias de escalada, topos de escalada, rocodromos">
+    <meta name="description" content="Buscador de rutas de escalada en córdoba, rocodromos y cursos de escalada">
+    <meta property="og:title" content=Cordoba Escala>
+    <meta property="og:site_name" content=Cordoba Escala>
+    <meta property="og:url" content="">
+    <meta property="og:description" content=Buscador de rutas de escalada de todo córdoba, rocodromos, cursos de escalada.>
+    <meta property="og:type" content="">
+    <meta property="og:image" content=https://i.ibb.co/TY8W3pP/logo.png>
+    <title>Córdoba Escala</title>
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
+    <link rel="icon" type="image/jpg" href="./assets/img/logo.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="grid-cont">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-black fs-2">
+                <div class="container-fluid">
+                  <a class="navbar-brand rounded-5 m-2" href="#">
+                    <img class="rounded-5" src="./assets/img/logo.png" alt="Bootstrap" width="auto" height="120">
+                  </a>
+                  <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                  </button>
+                  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-3">
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="./pages/cursos.html">Cursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="./pages/palestras.html">Rocódromos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sectores
+                        </a>
+                        <ul class="dropdown-menu text-center fs-4">
+                          <li class="li"><a class="dropdown-item mb-5" href="./pages/capilla.html">Capilla del monte</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item  mb-5" href="./pages/huerta.html">Huerta Grande</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item  mb-5" href="./pages/lafalda.html">La Falda</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item  mb-5" href="./pages/valle.html">Valle Hermoso</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item  mb-5" href="./pages/bialet.html">Bialet Masse</a></li>
+
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+                      <button class="btn btn-outline-info" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <section class="main__top">              
+                <h1>Córdoba Escala</h1>              
+              <div class="main__portada">
+                <div id="carouselExample" class="carousel slide m-3 main__fotos">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://i.ibb.co/vkcTNMf/IMG-20230810-145408550.jpg" class="d-block w-100 rounded-3" alt="..." width="auto" height="auto">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://i.ibb.co/ysXVRP3/IMG-20230930-155242937.jpg" class="d-block w-100 rounded-3" alt="..." width="auto" height="auto">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://i.ibb.co/3ppbxwJ/IMG-20230930-192403812.jpg" class="d-block w-100 rounded-3" alt="..." width="auto" height="auto">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="buscador__main">
+                  <h2>Buscador de rutas</h2>
+                  <form action="">                 
+                    <div class="div__span">
+                        <div>                      
+                          <span>Tipo:</span>
+                          <select>                      
+                          <option selected="" value="depo">Deportiva</option>
+                          <option value="trad">Clasica</option>                                    
+                          </select> 
+                        </div>                    
+                        <div>
+                          <Span>Desde:</Span>
+                          <select>
+                        <option>4to</option>
+                        <option>4to+</option>
+                        <option>5to</option>
+                        <option>5to+</option>
+                        <option>6a</option>
+                        <option>6a+</option>
+                        <option>6b</option>
+                        <option>6b+</option>
+                        <option>6c</option>
+                        <option>6c+</option>
+                        <option>7a</option>
+                        <option>7a+</option>
+                        <option>7b</option>
+                        <option>7b+</option>
+                        <option>7c</option>
+                        <option>7c+</option>
+                        <option>8a</option>
+                        <option>8a+</option>
+                        <option>8b</option>
+                        <option>8b+</option>
+                        <option>8c</option>
+                        <option>8c+</option>
+                        <option>9a</option>
+                        <option>9a+</option>
+                        <option>9b</option>
+                        <option>9b+</option>
+                        <option>9c</option>
+                          </select>
+                        </div> 
+                        <div>
+                          <span>Hasta:</span>
+                          <select>
+                      <option>4to+</option>
+                      <option>5to</option>
+                      <option>5to+</option>
+                      <option>6a</option>
+                      <option>6a+</option>
+                      <option>6b</option>
+                      <option>6b+</option>
+                      <option>6c</option>
+                      <option>6c+</option>
+                      <option>7a</option>
+                      <option>7a+</option>
+                      <option>7b</option>
+                      <option>7b+</option>
+                      <option>7c</option>
+                      <option>7c+</option>
+                      <option>8a</option>
+                      <option>8a+</option>
+                      <option>8b</option>
+                      <option>8b+</option>
+                      <option>8c</option>
+                      <option>8c+</option>
+                      <option>9a</option>
+                      <option>9a+</option>
+                      <option>9b</option>
+                      <option>9b+</option>
+                      <option>9c</option>
+                          </select>
+                        </div>
+                        <div>
+                          <button class="mi__btn">Buscar</button>
+                        </div>                      
+                    </div>
+                  </form>      
+                </div>
+              </div>
+            </section>         
+            <section class="main__card">
+              <h2>Rocódromos</h2>
+              <div class="main__bot">                         
+                <div class="myCard card-1">
+                  <div class="innerCard">
+                    <div class="frontSide">
+                      <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>                      
+                    </div>
+                    <div class="backSide">
+                      <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>
+                      <p class="title">La Cova Climbing</p>
+                      <p class="title2">La Falda</p>
+                    </div>
+                </div>
+                </div>
+                <div class="myCard card-2">
+                  <div class="innerCard">
+                    <div class="frontSide">
+                      <a href="./pages/lebloc.html"><img src="./assets/img/lebloc.png" alt=""></a>                      
+                    </div>
+                    <div class="backSide">
+                      <a href="./pages/lebloc.html"><img src="./assets/img/lebloc.png" alt=""></a>
+                      <p class="title">Le Bloc</p>
+                      <p class="title2">Córdoba</p>
+                    </div>
+                </div>
+                </div>              
+                <div class="myCard card-2">
+                  <div class="innerCard">
+                    <div class="frontSide">
+                      <a href="./pages/elchelco.html"><img src="./assets/img/el-chelco.png" alt=""></a>
+                    </div>
+                    <div class="backSide">
+                      <a href="./pages/elchelco.html"><img src="./assets/img/el-chelco.png" alt=""></a>
+                      <p class="title">El Chelco</p>
+                      <p class="title2">Bialet Massé</p>
+                    </div>
+                </div>
+                </div>
+                <div class="myCard card-3">
+                  <div class="innerCard">
+                      <div class="frontSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>                     
+                      </div>
+                      <div class="backSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>
+                        <p class="title">La Cova Climbing</p>
+                        <p class="title2">La Falda</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="myCard card-3">
+                  <div class="innerCard">
+                      <div class="frontSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>         
+                      </div>
+                      <div class="backSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>
+                        <p class="title">La Cova Climbing</p>
+                        <p class="title2">La Falda</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="myCard card-4">
+                  <div class="innerCard">
+                      <div class="frontSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>                    
+                      </div>
+                      <div class="backSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>
+                        <p class="title">La Cova Climbing</p>
+                        <p class="title2">La Falda</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="myCard card-4">
+                  <div class="innerCard">
+                      <div class="frontSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>                  
+                      </div>
+                      <div class="backSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>
+                        <p class="title">La Cova Climbing</p>
+                        <p class="title2">La Falda</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="myCard card-4">
+                  <div class="innerCard">
+                      <div class="frontSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>                    
+                      </div>
+                      <div class="backSide">
+                        <a href="./pages/lacova.html"><img src="./assets/img/lacova.png" alt=""></a>
+                        <p class="title">La Cova Climbing</p>
+                        <p class="title2">La Falda</p>
+                      </div>
+                  </div>
+                </div> 
+              </div>  
+              <div class="container__btn btn__grid">                    
+                <a href="./pages/palestras.html"><button class="mi__btn">Mostrar todos</button></a>                  
+              </div>
+            </section>
+            <section class="main-cursos">              
+              <h2 class="titulo">Cursos de escalada</h2>
+              <div class="cont-cursos">
+                <div class="cursos-img">
+                  <img src="./assets/img/cursos-roca.jpg" alt="">
+                </div>
+                <h3>Está dirigido a aquellas personas que quieren aprender a escalar y no tienen ninguna experiencia, como asi también a aquellas que quieran continuar con el aprendizaje.</h3>
+              </div>
+              <div class="container__btn btn-cursos">
+                <a href="./pages/cursos.html"><button class="mi__btn">Enterate más</button></a>
+              </div>
+            </section>
+        </main>
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2023 Córdoba Escala</p>
+        
+            <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <img class="rounded-5" src="./assets/img/logo.png" alt="Bootstrap" width="auto" height="120">
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="./pages/cursos.html" class="nav-link px-2 text-muted">Cursos</a></li>
+              <li class="nav-item"><a href="./pages/palestras.html" class="nav-link px-2 text-muted">Rocódromos</a></li>
+              <li class="nav-item"><a href="./pages/interes.html" class="nav-link px-2 text-muted">Paginas de Interes</a></li>
+              <li class="nav-item"><a href="./pages/contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+            </ul>
+          </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+

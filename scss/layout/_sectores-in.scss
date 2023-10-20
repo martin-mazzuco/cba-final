@@ -1,0 +1,52 @@
+.grid-cont{
+    main{
+        .sectores__top{
+            color: white;
+            text-align: center;
+            margin: 1.5625rem;            
+        }
+        .sectores__guia{
+
+            .sectores__foto{               
+               display: flex;
+               justify-content: center;
+               margin: 0 0 0.625rem 0;
+                img{
+                    
+                    border-radius: 1.5625rem;
+                }                
+            }
+            .tabla{                
+                margin: auto;
+            }
+        } 
+        .sectores__in{ 
+            h2{
+                text-align: center;
+                border-bottom: 1px solid black;
+                margin: 1.25rem;
+                color: white;
+            }          
+            .box__sectores{ 
+                @include flex(center,center,column,0.9375rem);                                      
+                border: 1px solid black;
+                margin: 0.625rem;
+                border-radius: 1.5625rem; 
+                padding: 0.625rem;  
+                background-color: grey;             
+                h3{
+                    text-align: center;
+                }
+                img{
+                    border-radius: 1.5625rem; 
+                    margin: 10px 0;                   
+                } 
+                .lista__sectores{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }                
+            }            
+        }       
+    }
+}

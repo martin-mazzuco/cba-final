@@ -1,0 +1,111 @@
+.grid-cont {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+        background-image: $bg-image;
+        .main__top{
+            color: white;
+            @include flex(center,center,column,0.9375rem);
+            .main__portada{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                .main__fotos{                  
+                    max-width: 40rem;
+                }
+                .buscador__main{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    background-color: $bg-color;
+                    border-radius: 1.5625rem;
+                    width: 90%;
+                    margin: 25px;
+                    min-width: 18rem;
+                    min-height: 12.8125rem;
+                    form{
+                        .div__span{
+                            @include flex(center,center,column,0.9375rem)
+                        }
+                    }
+                }
+                
+            }
+
+        }
+        .main__card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;     
+            h2{
+                
+                color: black;
+                font-size: 1.875rem;
+                margin: 0 0 1.25rem 0;
+            }
+            .main__bot{
+                margin: auto;
+                padding: 1.25rem;
+                border: 1px solid black;
+                border-radius: 1.5625rem;
+                .card-2{
+                    display: none;
+                }
+                .card-3{
+                    display: none;
+                }
+                .card-4{
+                    display: none;
+                }
+            }
+                     
+        }
+        .main-cursos{            
+            text-align: center;
+            @include flex(center,center,column,0.9375rem);           
+            margin: 1.25rem;
+            .titulo{
+                margin: 0 0 1.25rem 0;
+                font-size: 1.875rem; 
+            } 
+            .cont-cursos{
+                border: 1px solid black;
+                border-radius: 1.5625rem; 
+                padding: 0.625rem;
+                max-width:60.625rem ;
+                .cursos-img{
+                    img{
+                        border-radius: 1.5625rem;
+                        margin: 0.3125rem;
+                        height: 12.5rem;
+                        width: 12.5rem;
+                    }
+                }              
+            }           
+        }
+        }
+
+
+    footer{
+    grid-area: footer;   
+
+    }
+}
+
+
+

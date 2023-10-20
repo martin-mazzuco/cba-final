@@ -1,0 +1,25 @@
+.grid-cont{
+    main{
+        .sectores__titulo{
+            h1{
+                margin-top: 5rem;
+                text-align: center;
+                color: white;
+            }
+        }
+        .sectores__ppal--top{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-top: 5rem;
+            .sectores__card{
+                height: 600px;
+                div{
+                    p{
+                       height: 15rem; 
+                    }
+                }
+            }
+        }
+    }
+}

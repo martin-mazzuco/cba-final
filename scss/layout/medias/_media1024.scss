@@ -1,0 +1,84 @@
+@media (min-width:1024px){
+    .grid-cont{
+        main{
+            .main__top{
+                .main__portada{
+                    flex-direction: row;
+                    align-items: stretch;                    
+                }
+            }
+            .main__card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; 
+                text-align: center;     
+                h2{
+                    
+                    color: black;
+                    font-size: 1.875rem;
+                    margin: 0 0 1.25rem 0;
+                }
+                .main__bot{
+                    margin: auto;
+                    padding: 1.25rem;
+                    border: 1px solid black;
+                    border-radius: 1.5625rem;
+                    display: grid;
+                    width: 90%;                                                       
+                    grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
+                    .card-3{
+                        display: flex;
+                    }
+                    .card-4{
+                        display: none;
+                    }
+                }            
+            }
+            .main__cursos-top{
+                display: grid;                
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "text text"
+                "cf cd"
+                ;                
+                margin: auto;
+                
+                .curso__titulo{
+                    grid-area: text;
+                }
+                .curso__foto{
+                    grid-area: cf;
+                    margin: auto;
+                }
+                .curso__datos{
+                    grid-area: cd;
+                    margin: auto;
+                }
+            }
+            .pales__in--mid{
+                max-height: 41.8125rem;
+                display: flex;
+                flex-direction: row;
+                margin: 30px;
+                .pales__portada{                   
+                    flex-direction: column;
+                    margin: 20px 100px;
+                }
+                .pales__foto-muro{
+                    img{
+                        margin: 0 0;                        
+                    }
+                }
+            } 
+            .sectores__guia{                
+                .tabla{  
+                    width: 37.5rem;              
+                    margin: auto;
+                }
+            }          
+        }
+    }
+    
+}
